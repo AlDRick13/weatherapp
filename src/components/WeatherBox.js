@@ -32,7 +32,7 @@ function WeatherBox() {
 
     useEffect(()=>{
         const logic = async () => {
-            const url = `http://api.weatherapi.com/v1/current.json?key= e0090a221b304252859142354211008&q=${lat},${long}&aqi=no`
+            const url = `https://api.weatherapi.com/v1/current.json?key= e0090a221b304252859142354211008&q=${lat},${long}&aqi=no`
             const data = await fetch(url).then(res => res.json())
             setCity(data.location.name)
             setState(data.location.region)
@@ -47,6 +47,7 @@ function WeatherBox() {
             setWindSpeed((data.current.wind_kph)+'km/h')
 
             setCurrentTemp(tempC)
+            
         }
         if (lat && long){
             logic()
