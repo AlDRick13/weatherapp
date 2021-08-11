@@ -2,9 +2,19 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Weather-box{
+  color: black;
+  background-color: white;
+  padding: 15px;
+  max-width: 500px;
+  font-family: 'Beth Ellen';
+  border-radius: 5%;
+  box-sizing: border-box;
+}
+
+.Width-50{
+  width: 50%;
+  display: inline-block;
 }
 
 @media (prefers-reduced-motion: no-preference) {
